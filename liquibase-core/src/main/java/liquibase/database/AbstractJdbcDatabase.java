@@ -150,7 +150,10 @@ public abstract class AbstractJdbcDatabase implements Database {
     public DatabaseObject[] getContainingObjects() {
         return null;
     }
-
+    
+	
+	  @Override public boolean failOnDefferable() { return true; }
+	 
     // ------- DATABASE INFORMATION METHODS ---- //
 
     @Override

@@ -820,4 +820,8 @@ public class MockDatabase implements Database, InternalDatabase {
     public boolean requiresExplicitNullForColumns() {
         return false;
     }
+	
+	  @Override public boolean failOnDefferable() { 
+		  return true; }
+	 
 }
